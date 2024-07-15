@@ -127,33 +127,36 @@ async def get_thumb(videoid, user_id):
             
 
             image2.paste(image3, (229,141), mask = image3)
-            image2.paste(x, (0,0), mask = circle)
+            image2.paste(x, (980, 586), mask=x)
+            #image2.paste(x, (0,0), mask = circle)
 
             # fonts
             font1 = ImageFont.truetype('sarahxmusic/assets/font.ttf', 30)
             font2 = ImageFont.truetype('sarahxmusic/assets/font2.ttf', 70)
-            font3 = ImageFont.truetype('sarahxmusic/assets/font2.ttf', 40)
-            font4 = ImageFont.truetype('sarahxmusic/assets/font2.ttf', 35)
+            font3 = ImageFont.truetype('sarahxmusic/assets/font2.ttf', 33)
+            #font4 = ImageFont.truetype('sarahxmusic/assets/font2.ttf', 30)
+            font5 = ImageFont.truetype('sarahxmusic/assets/font2.ttf', 80)
 
             image4 = ImageDraw.Draw(image2)
             image4.text((10, 10), f"{MUSIC_BOT_NAME}", fill="white", font = font1, align ="left") 
-            image4.text((670, 150), "NOW PLAYING", fill="white", font = font2, stroke_width=2, stroke_fill="white", align ="left") 
+            image4.text((670, 230), "FEEL", fill="white", font = font5, stroke_width=2, stroke_fill="white")
+            image4.text((730, 330), "THE", fill="white", font = font5, stroke_width=2, stroke_fill="white")
+            image4.text((800, 430), "VIBE!", fill="white", font = font5, stroke_width=2, stroke_fill="white")
 
             # title
             title1 = truncate(title)
-            image4.text((670, 300), text=title1[0], fill="white", stroke_width=1, stroke_fill="white",font = font3, align ="left") 
-            image4.text((670, 350), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font = font3, align ="left") 
+            image4.text((290, 620), text=title1[0], fill="white", stroke_width=1, stroke_fill="white",font = font3, align ="left") 
+            image4.text((338, 670), text=title1[1], fill="white", stroke_width=1, stroke_fill="white", font = font3, align ="left") 
 
             # description
             views = f"Views : {views}"
             duration = f"Duration : {duration} Mins"
             channel = f"Channel : {channel}"
 
-            image4.text((670, 450), text=views, fill="white", font = font4, align ="left") 
-            image4.text((670, 500), text=duration, fill="white", font = font4, align ="left") 
-            image4.text((670, 550), text=channel, fill="white", font = font4, align ="left")
+            #image4.text((650, 350), text=views, fill="white", font = font4, align ="left") 
+            image4.text((650, 400), text=duration, fill="white", font = font4, align ="left") 
+            image4.text((650, 450), text=channel, fill="white", font = font4, align ="left")
             
-            image2 = ImageOps.expand(image2,border=20,fill=make_col())
             image2 = image2.convert('RGB')
             image2.save(f"cache/{videoid}.jpg")
             file = f"cache/{videoid}.jpg"
