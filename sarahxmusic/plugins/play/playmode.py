@@ -5,7 +5,7 @@ from sarahxmusic import app
 from sarahxmusic.utils.database import get_playmode, get_playtype, is_nonadmin_chat
 from sarahxmusic.utils.decorators import language
 from sarahxmusic.utils.inline.settings import playmode_users_markup
-from sarahxmusic import BANNED_USERS
+from config import BANNED_USERS
 
 
 @app.on_message(filters.command(["playmode", "mode"]) & filters.group & ~BANNED_USERS)
