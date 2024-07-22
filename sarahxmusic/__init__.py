@@ -15,7 +15,13 @@ app = SARAH()
 userbot = Userbot()
 
 
-from .platforms import *
+from .platforms.Apple import AppleAPI
+from .platforms.Carbon import CarbonAPI
+from .platforms.Spotify import SpotifyAPI
+from .platforms.Resso import RessoAPI
+from .platforms.Telegram import TeleAPI
+from .platforms.YouTube import YouTubeAPI
+from .platforms.Soundcloud import SoundAPI
 
 Apple = AppleAPI()
 Carbon = CarbonAPI()
