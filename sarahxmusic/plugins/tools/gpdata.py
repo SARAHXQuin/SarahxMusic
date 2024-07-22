@@ -5,7 +5,7 @@ from sarahxmusic import app
 from config import OWNER_ID
 from sarahxmusic.misc import SUDOERS
 from pyrogram.types import Message
-from sarahxmusic.utils.thava_ban import admin_filter
+from sarahxmusic.utils.sarah_ban import admin_filter
 from pyrogram.types import Message, CallbackQuery, InlineKeyboardMarkup, InlineKeyboardButton
 from sarahxmusic.utils.database import delete_served_chat
 
