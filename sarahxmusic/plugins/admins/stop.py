@@ -23,5 +23,5 @@ async def stop_music(cli, message: Message, _, chat_id):
         photo=photo_url          
     )
     await message.reply_text(
-        _["admin_5"].format(message.from_user.mention), disable_web_page_preview=True
+        _["admin_5"].format(message.from_user.mention), reply_markup=close_markup(_)
     )
