@@ -24,7 +24,7 @@ LOGGER_ID = int(getenv("LOGGER_ID", ""))
 
 OWNER_ID = int(getenv("OWNER_ID", "1556830659"))
 
-START_STICKER_ID = getenv("START_STICKER_ID", "CAACAgUAAxkBAAIYJ2XDYrt9C1aT2TMAAVbvhu7GQt4pxQACOg4AAs7jGVZZ_1ODkCxOcx4E")
+START_STICKER_ID = getenv("START_STICKER_ID", "CAACAgUAAxkBAAEMgWhml69Wx7YkDGlt0hkiym2KnrT49QACEAUAAooH4VWxEZDXfVTWqjUE")
 
 MUSIC_BOT_NAME = getenv("MUSIC_BOT_NAME", "sarah x music")
 
@@ -92,7 +92,7 @@ PING_IMG_URL = getenv(
     "PING_IMG_URL", "https://te.legra.ph/file/86a7ff0f5d480f255fafb.jpg"
 )
 PLAYLIST_IMG_URL = "https://telegra.ph/file/7db32a17b15440fa88f91.jpg"
-STATS_IMG_URL = "https://telegra.ph/file/02af26494524244cf83d0.jpg"
+STATS_IMG_URL = "https://telegra.ph/file/8f4293af18fdb472c7cfe.jpg"
 TELEGRAM_AUDIO_URL = "https://telegra.ph/file/fa144f06d6d024877edda.jpg"
 TELEGRAM_VIDEO_URL = "https://telegra.ph/file/fa144f06d6d024877edda.jpg"
 STREAM_IMG_URL = "https://telegra.ph/file/03efec694e41e891b29dc.jpg"
