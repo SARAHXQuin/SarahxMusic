@@ -6,13 +6,13 @@ from pyrogram import filters
 
 load_dotenv()
 
-API_ID = int(getenv("API_ID", ""))
+API_ID = int(getenv("API_ID", "29174394"))
 
-API_HASH = getenv("API_HASH", "")
+API_HASH = getenv("API_HASH", "2c83df6681819061fb6951c8d482b661")
 
-BOT_TOKEN = getenv("BOT_TOKEN", "")
+BOT_TOKEN = getenv("BOT_TOKEN", "7155707387:AAGBWDAbM4mJ27y1cPOaEIUBBILW25vE5l8")
 
-MONGO_DB_URI = getenv("MONGO_DB_URI", "")
+MONGO_DB_URI = getenv("MONGO_DB_URI", "mongodb+srv://karjr002:cksxRBVwMBNWG4bL@cluster0.c10vtnq.mongodb.net/?retryWrites=true&w=majority&appName=Cluster0")
 
 DURATION_LIMIT_MIN = int(getenv("DURATION_LIMIT", 54000))
 
@@ -20,7 +20,7 @@ SONG_DOWNLOAD_DURATION = int(
     getenv("SONG_DOWNLOAD_DURATION_LIMIT", "54000")
 )
 
-LOGGER_ID = int(getenv("LOGGER_ID", ""))
+LOGGER_ID = int(getenv("LOGGER_ID", "-1002102147486"))
 
 OWNER_ID = int(getenv("OWNER_ID", "1556830659"))
 
@@ -66,7 +66,7 @@ TG_VIDEO_FILESIZE_LIMIT = int(getenv("TG_VIDEO_FILESIZE_LIMIT", 1073741824))
 
 
 # Get your pyrogram v2 session from @Stringene_bot on Telegram
-STRING1 = getenv("STRING_SESSION", "")
+STRING1 = getenv("STRING_SESSION", "BQG9KnoAuUx-Dvh_5R9_u_o1EWqxbi-Ya7rH2U8bPUzaNJpltKQkll5Cq-kaeG09mlQKjoNe70Qv_jGKOPSc7bYL_MBkzHCF8EluShON50UJCg76RdEudLu_AxcBMW86BWTUJY3vKHwV3HrUmBY1ud9b8JBizim3_Ng18l2ek15gVIxAKtBZRWY2VXpUtnPB2ZYSiyvEGdTNA-PLMTa3t0TfpexfaMLt5_uItyM0j9VVPlZZrrQ2LpELaBm7KC6SlybpZbNuX-WE6VnHxATQmRdzRknPkTjZyvf0m1JAbfWS_2Uz0LsRpEZeXM054h3vC8-pPTTWNmjPq5timm_ois8EnvjZhgAAAAGcOqBZAA")
 STRING2 = getenv("STRING_SESSION2", None)
 STRING3 = getenv("STRING_SESSION3", None)
 STRING4 = getenv("STRING_SESSION4", None)
